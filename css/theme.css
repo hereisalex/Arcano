@@ -142,16 +142,6 @@
         border-radius: 5px;
     }
 
-    .container {
-        background-color: white;
-        color: black;
-        margin: 5%;
-        padding: 15px;
-        border-radius: 25px;
-        margin-left: 250px;
-        margin-top: 110px;
-
-    }
 
     ul {
         display: block;
@@ -249,16 +239,17 @@
        */
       
       .site-header {
-        background-color: rgba(0, 0, 0, .85);
+        background-color: rgba(255, 255, 255, 0.9);
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
+        box-shadow: #00000036 10px 10px 10px;
       }
       .site-header a {
-        color: #8e8e8e;
+        color: #6e6e6e;
         transition: color .15s ease-in-out;
       }
       .site-header a:hover {
-        color: #fff;
+        color: rgb(0, 0, 0);
         text-decoration: none;
       }
       
@@ -275,9 +266,9 @@
         background-color: #333;
         border-radius: 21px;
         transform: rotate(30deg);
-        z-index: -1;
+        z-index: -2;
       }
-      
+
       .product-device::before {
         position: absolute;
         top: 10%;
@@ -287,7 +278,7 @@
         content: "";
         background-color: rgba(255, 255, 255, .1);
         border-radius: 5px;
-        z-index: -1;
+        z-index: -2;
       }
       
       .product-device-2 {
@@ -314,6 +305,6 @@
 
       #firstbox {
           border-radius: 30px;
-          margin-top: 4.5rem!important;
           z-index: -2;
       }
+
