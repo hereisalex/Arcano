@@ -1,0 +1,21 @@
+$primaryBtn: rgb(111, 0, 255);
+$textColor: rgb(255, 0, 0);
+
+header{
+    background: lavender;
+    display: flex;
+    justify-content: center;
+    color: $textColor;
+    button{
+        background: $primaryBtn;
+    }
+}
+
+
+
+
+header 
+
+.contact button {
+    background: $primaryBtn;
+}

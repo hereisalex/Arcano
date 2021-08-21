@@ -1,43 +1,66 @@
+// defining the variables
+
+@bgcolor: rgb(0, 0, 0);
+@darktext: black;
+@lighttext: white;
+@headerbg: white;
+@h1fontsize: 24px;
+@h2fontsize: 20px;
+@h3fontsize: 16px;
+@ahover: #0DD5FA;
+@mainfont: 'Poppins', Arial, Helvetica, sans-serif;;
+
 html {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: @mainfont;
 }
 body {
-  background-color: #000000;
-  color: white;
+    background-color: @bgcolor;
+    color: @lighttext;
 }
+
 h1 {
-  font-size: 24px;
-  font-weight: bold;
+    font-size: @h1fontsize;
+    font-weight: bold;
 }
+
 h2 {
-  font-size: 20px;
+    font-size: @h2fontsize;
 }
+
 h3 {
-  font-size: 16px;
+    font-size: @h3fontsize;
 }
+
 li {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
+
+
+// creating the rounded mixin
 .rounded {
-  border-radius: 30px;
-  z-index: -2;
+    border-radius: 30px;
+    z-index: -2;
 }
 .logo {
-  height: 25px;
+    height: 25px; 
+    // nesting
+    &:hover{
+        opacity: 0.7;
+    }
 }
-.logo:hover {
-  opacity: 0.7;
-}
+
 .container {
-  max-width: 960px;
-}
+    max-width: 960px;
+  }
+  
 .lock {
-  -webkit-animation: flicker-in-1 2s linear both;
-  animation: flicker-in-1 2s linear both;
+	-webkit-animation: flicker-in-1 2s linear both;
+	        animation: flicker-in-1 2s linear both;
 }
-@-webkit-keyframes flicker-in-1 {
+
+ @-webkit-keyframes flicker-in-1 {
   0% {
     opacity: 0;
   }
@@ -227,34 +250,48 @@ li {
     opacity: 1;
   }
 }
-.site-header {
-  background-color: white;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  box-shadow: #00000036 10px 10px 10px;
-}
-.site-header a {
-  color: black;
-  text-decoration: none;
-}
-.site-header a:hover {
-  color: #0DD5FA;
-}
-.icon {
-  height: 100px;
-}
-.preview {
-  height: 300px;
-  width: 100% \9;
-}
-.flex-equal > * {
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
+
+
+
+  .site-header {
+    background-color: @headerbg;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: #00000036 10px 10px 10px;
+
+    a {
+        color: @darktext;
+        text-decoration: none;
+        // nesting
+        &:hover {
+            color:@ahover;
+          }
+      }
+  }
+
+
+  .icon {
+    height: 100px;
+
+  }
+  
+
+  .preview {
+    height: 300px;
+    width: 100% \9;
+  }
+  .flex-equal > * {
     flex: 1;
   }
-}
-.preview {
-  height: 200px;
-}
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+
+  .preview {
+    height: 200px;
+  }
+// using the rounded mixin
+
+
