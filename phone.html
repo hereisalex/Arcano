@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>arcano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<header class="site-header py-1">
+  <div id="navbartarget"></div>
+
+</header>
+
+  <body>
+    <script id="navbartemplate" type="x-tmpl-mustache">
+      <nav class="container-fluid d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="index.html" aria-label="Home">
+          <img class="logo" src="assets/logo.png" >
+        </a>
+        <nav class="container mx-auto d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2 d-none d-md-inline-block" href="phone.html">{{navbar.btn1}}</a>
+          <a class="py-2 d-none d-md-inline-block" href="pad.html">{{navbar.btn2}}</a>
+          <a class="py-2 d-none d-md-inline-block" href="book.html">{{navbar.btn3}}</a>
+          <a class="py-2 d-none d-md-inline-block" href="shop.html">{{navbar.btn4}}</a>
+          <a class="py-2 d-none d-md-inline-block" href="support.html">{{navbar.btn5}}</a>
+          <a class="py-2 d-none d-md-inline-block" href="about.html">{{navbar.btn6}}</a>
+          <a class="py-2 d-none d-md-inline-block" href="cart.html">{{navbar.btn7}}</a>
+        </nav>
+      </nav>
+    </script>
+
+    <script id="firstboxtemplate" type="x-tmpl-mustache">
+      <div class="py-3 bg-transparent position-relative overflow-hidden text-center" >
+          <div class="row align-items-center mt-5 py-2 ">
+            <div class="container-fluid py-3 my-5">
+              <div>
+              <h1 class="display-1 fw-normal">It's time to take back your data.</h1>
+              
+              <p class="lead fw-normal">{{firstbox.subheader}}</p>
+              <img src="/assets/holdphone.jpg" class="img-fluid">
+              </div>
+
+            </div>
+            
+            </div>
+          </div>
+            
+
+          </div>
+        </div>
+    </script>
+
+    <script id="secondboxtemplate" type="x-tmpl-mustache">
+      <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden">
+        <h1 class="display-5 fw-normal">Features</h1>
+        <div class="row my-3 py-3">
+          <div class="col wipeEnter">
+            <img src="/assets/photo-camera.png" class="icon img-fluid">
+            <h2 class="fw-normal my-3">Revolutionary Camera</h2>
+            <ul style="padding-left: 0px;">
+              <li>Quad-Lens System</li>
+              <li>Optical Image Stabilization</li>
+              <li>4K Video Recording at 60 FPS</li>
+              <li>Secure Photo Storage</li>
+            </ul>
+
+          </div>
+          <div class="col wipeEnter">
+            <img src="/assets/processor.png" class="icon img-fluid">
+            <h2 class="fw-normal my-3">Blazing Fast Speeds</h2>
+            <ul style="padding-left: 0px;">
+              <li>Quad-Lens System</li>
+              <li>Optical Image Stabilization</li>
+              <li>4K Video Recording at 60 FPS</li>
+              <li>Secure Photo Storage</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row my-3 py-3">
+          <div class="col wipeEnter">
+            <img src="/assets/data-protection.png" class="icon img-fluid">
+            <h2 class="fw-normal my-3">Breakthrough Privacy Features</h2>
+            <ul style="padding-left: 0px;">
+              <li>Quad-Lens System</li>
+              <li>Optical Image Stabilization</li>
+              <li>4K Video Recording at 60 FPS</li>
+              <li>Secure Photo Storage</li>
+            </ul>
+          </div>
+          <div class="col my-2 wipeEnter">
+            <img src="/assets/diamond.png" class="icon img-fluid">
+            <h2 class="fw-normal my-3">Built to Last</h2>
+            <ul style="padding-left: 0px;">
+              <li>Quad-Lens System</li>
+              <li>Optical Image Stabilization</li>
+              <li>4K Video Recording at 60 FPS</li>
+              <li>Secure Photo Storage</li>
+            </ul>
+          </div>
+        </div>      
+
+          </div>
+        </div>
+
+      </div>
+    </script>
+
+    <script id="thirdboxtemplate" type="x-tmpl-mustache">
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">{{thirdbox.header}}</h2>
+          <p class="lead">{{thirdbox.subheader}}</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </script>
+    <main>
+      <div id="firstboxtarget"></div>
+        <div id="secondboxtarget"></div>
+        <div class="bg-transparent position-relative overflow-hidden" id="firstbox">
+
+            <div class="row mb-1">
+              <div class="col">
+                <img src="assets/bigphone.png" class="img-fluid";">
+              </div>
+              <div class="col mt-2" >
+                <br class="mt-5 pt-5">
+               <h1 class="display-1 fw-normal pt-5">Privacy is our priority</h1>
+                <p class="display-5 mb-5">World-class security features built-in.</p>
+                <h2 class=" my-3">No more intrusive, targeted ads--your data is not for sale.</h2>
+                <ul style="padding-left: 0px;">
+                  <li>Ad tracking disabled by default</li>
+                  <li>System-wide ad blocker</li>
+                  <li>Advanced tracking alert system</li>
+                </ul>
+                <h2 class=" my-3 pt-5">Stay anonymous, stay secure.</h2>
+                <ul style="padding-left: 0px;">
+                  <li>Includes dedicated VPN access</li>
+                  <li>Global incognito mode</li>
+                  <li>Physical camera lens covers</li>
+                </ul>
+                <h2 class=" my-3 pt-5">Use the arcSwitch to go off the grid.</h2>
+                <ul style="padding-left: 0px;">
+                  <li>Hardware switch to control connectivity</li>
+                  <li>Physically disconnects GPS, WiFi and Cellular</li>
+                  <li>You have ultimate control</li>
+                </ul>
+                <a class="btn btn-dark btn-lrg text-center mt-3" href="shop.html">Learn More</a><br>
+              </div>
+              
+
+              
+            </div>
+          </div>
+        </div>
+        <!-- <div id="thirdboxtarget"></div> -->
+      </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>arcano
+          </h6>
+          <p>
+            Our name comes from the Latin word "arcana", which means hidden, secret, private, mysterious, intimate, personal, confidential and trustworthy.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">arcPhone</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">arcPad</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">arcBook</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">arcVPN</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Store</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Support</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Work at arcano</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">About arcano</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i>Saint Paul, MN 55114, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            contact@arcano.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 1 800 4 ARCANO </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://github.com/hereisalex">arcano.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    
+  </body>
+
+</html>
