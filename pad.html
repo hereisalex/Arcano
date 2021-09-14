@@ -121,59 +121,71 @@
     </script>
 
     <script id="thirdboxtemplate" type="x-tmpl-mustache">
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">{{thirdbox.header}}</h2>
-          <p class="lead">{{thirdbox.subheader}}</p>
-        </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
+      <div class="bg-transparent position-relative overflow-hidden" id="firstbox">
+
+        <div class="row my-1">
+          <div class="col">
+            <img src="assets/bigtab.png" class="img-fluid">
+          </div>
+          <div class="col mt-3">
+            <br class="mt-5 pt-5">
+           <h1 class="display-1 fw-normal pt-5">arcPad</h1>
+            <p class="display-5 mb-5">Starting at $499.</p>
+            <h2 class=" my-3">No more intrusive, targeted ads--your data is not for sale.</h2>
+            <ul style="padding-left: 0px;">
+              <li>Ad tracking disabled by default</li>
+              <li>System-wide ad blocker</li>
+              <li>Advanced tracking alert system</li>
+            </ul>
+            <h2 class=" my-3 pt-5">Stay anonymous, stay secure.</h2>
+            <ul style="padding-left: 0px;">
+              <li>Includes dedicated VPN access</li>
+              <li>Global incognito mode</li>
+              <li>Physical camera lens covers</li>
+            </ul>
+            <h2 class=" my-3 pt-5">Use the arcSwitch to go off the grid.</h2>
+            <ul style="padding-left: 0px;">
+              <li>Hardware switch to control connectivity</li>
+              <li>Physically disconnects GPS, WiFi and Cellular</li>
+              <li>You have ultimate control</li>
+
+            </ul>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                256gb
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">512gb</a>
+                <a class="dropdown-item" href="#">1tb</a>
+                <a class="dropdown-item" href="#">2tb</a>
+              </div>
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Onyx Black
+              </button>
+              
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Ruby Red</a>
+                <a class="dropdown-item" href="#">Titanium Silver</a>
+                <a class="dropdown-item" href="#">Amythest Purple</a>
+              </div>
+              <a class="btn btn-primary btn-lrg text-center me-2" href="shop.html">Add to Cart</a><br>
+            </div>
+           
+            </div>
+            </div>
+          </div>
     </script>
     <main>
       <div id="firstboxtarget"></div>
         <div id="secondboxtarget"></div>
-        <div class="bg-transparent position-relative overflow-hidden" id="firstbox">
 
-            <div class="row my-1">
-              <div class="col">
-                <img src="assets/bigtab.png" class="img-fluid">
-              </div>
-              <div class="col mt-3">
-                <br class="mt-5 pt-5">
-               <h1 class="display-1 fw-normal pt-5">Privacy is our priority</h1>
-                <p class="display-5 mb-5">World-class security features built-in.</p>
-                <h2 class=" my-3">No more intrusive, targeted ads--your data is not for sale.</h2>
-                <ul style="padding-left: 0px;">
-                  <li>Ad tracking disabled by default</li>
-                  <li>System-wide ad blocker</li>
-                  <li>Advanced tracking alert system</li>
-                </ul>
-                <h2 class=" my-3 pt-5">Stay anonymous, stay secure.</h2>
-                <ul style="padding-left: 0px;">
-                  <li>Includes dedicated VPN access</li>
-                  <li>Global incognito mode</li>
-                  <li>Physical camera lens covers</li>
-                </ul>
-                <h2 class=" my-3 pt-5">Use the arcSwitch to go off the grid.</h2>
-                <ul style="padding-left: 0px;">
-                  <li>Hardware switch to control connectivity</li>
-                  <li>Physically disconnects GPS, WiFi and Cellular</li>
-                  <li>You have ultimate control</li>
-                  <a class="btn btn-dark btn-lrg text-center px-4 py-2 mt-3" href="shop.html">Learn More</a>
-                  <a class="btn btn-primary btn-lrg text-center px-5 py-2 mt-3" href="shop.html">Shop</a>
-                </ul>
-
-               
-                </div>
-                </div>
-              </div>
               
 
               
             </div>
           </div>
         </div>
-        <!-- <div id="thirdboxtarget"></div> -->
+        <div id="thirdboxtarget"></div>
       </div>
     <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
